@@ -1,0 +1,33 @@
+Wed, 06 Dec 2017 15:11:34 orm.py[line:106] INFO found model: User (table:users)
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: id ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: email ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: passwd ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: admin ==> <BooleanField,boolean:None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: name ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: image ==> <StringField,varchar(500):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: created_at ==> <FloatField,real:None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:106] INFO found model: Blog (table:blogs)
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: id ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: user_id ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: user_name ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: user_image ==> <StringField,varchar(500):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: name ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: summary ==> <StringField,varchar(200):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: content ==> <TextField,text:None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: created_at ==> <FloatField,real:None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:106] INFO found model: Comment (table:comments)
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: id ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: blog_id ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: user_id ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: user_name ==> <StringField,varchar(50):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: user_image ==> <StringField,varchar(500):None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: content ==> <TextField,text:None>
+Wed, 06 Dec 2017 15:11:34 orm.py[line:112] INFO  found mapping: created_at ==> <FloatField,real:None>
+Wed, 06 Dec 2017 15:11:34 selector_events.py[line:65] DEBUG Using selector: KqueueSelector
+Wed, 06 Dec 2017 15:11:34 orm.py[line:17] INFO create database connection pool...
+Wed, 06 Dec 2017 15:11:35 orm.py[line:157] DEBUG using default value for admin:True
+Wed, 06 Dec 2017 15:11:35 orm.py[line:157] DEBUG using default value for created_at:1512544295.130729
+Wed, 06 Dec 2017 15:11:35 orm.py[line:157] DEBUG using default value for id:634c116969d8424ebd680913dc0b30e7
+Wed, 06 Dec 2017 15:11:35 orm.py[line:13] INFO SQL:insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+Wed, 06 Dec 2017 15:11:35 orm.py[line:13] INFO SQL:select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users`  where  name='leonard_tia'  order by  created_at desc
+Wed, 06 Dec 2017 15:11:35 orm.py[line:43] INFO rows returned: 5
